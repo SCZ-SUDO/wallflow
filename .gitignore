@@ -1,0 +1,40 @@
+# ── 构建产物 ──
+build/
+dist/
+*.app
+*.dmg
+*.zip
+
+# ── 依赖与环境 ──
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# ── 模型权重 / 检查点 ──
+*.pt
+*.bin
+*.safetensors
+
+# ── 私密与本地文件 ──
+.env
+.env.*
+*.env
+config.json
+server_data/
+*.log
+
+# ── 用户自己的壁纸视频（体积大，不入库）──
+*.mp4
+*.mov
+*.m4v
+# 但内置示例壁纸是源码的一部分，构建需要它
+!Resources/Demo/Aurora.mp4
+
+# ── macOS / 编辑器 ──
+.DS_Store
+._*
+*.swp
+.idea/
+.vscode/
